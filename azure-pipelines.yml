@@ -28,3 +28,10 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo "Gulp is running..."
+      
+      echo "##[section] Gulp successfull."
+      
