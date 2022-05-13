@@ -27,6 +27,7 @@ jobs:
       with:
         image: vlad1492/anothersimpleapp
         registry: docker.io
+        tag: latest
         dockerfile: AnotherSimpleApp/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
