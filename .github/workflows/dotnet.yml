@@ -27,6 +27,6 @@ jobs:
       with:
         image: vlad1492/anothersimpleapp
         registry: docker.io
-        path: ./AnotherSimpleApp/dockerfile
+        dockerfile: AnotherSimpleApp/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
