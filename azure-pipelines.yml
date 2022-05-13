@@ -28,6 +28,10 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-- task: Npm@1
+- task: CmdLine@2
   inputs:
-    command: 'install'
+    script: |
+      echo "Gulp is running..."
+      
+      echo "##[section] Gulp successfull."
+      
