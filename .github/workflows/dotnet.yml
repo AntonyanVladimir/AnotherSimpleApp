@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -29,6 +27,6 @@ jobs:
       with:
         image: vlad1492/anothersimpleapp
         registry: docker.io
-        dockerfile: ./AnotherSimpleApp/dockerfile
+        dockerfile: "./AnotherSimpleApp/dockerfile"
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
